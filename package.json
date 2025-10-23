@@ -1,0 +1,58 @@
+{
+  "name": "resium-2d-3d-demo",
+  "version": "1.0.0",
+  "description": "Resium demo with 2D/3D view switching",
+  "main": "electron/main.js",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron-dev": "cross-env NODE_ENV=development electron .",
+    "electron-pack": "npm run build && electron-builder",
+    "electron-dist": "npm run build && electron-builder --publish=never"
+  },
+  "dependencies": {
+    "cesium": "^1.119.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "resium": "^1.17.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.6.4",
+    "vite": "^5.0.12",
+    "vite-plugin-cesium": "^1.2.22"
+  },
+  "build": {
+    "appId": "com.example.resium-demo",
+    "productName": "Resium 3D Map Demo",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
