@@ -15,7 +15,7 @@
 
 ## 🚀 在线体验
 
-**[🌐 在线演示](https://wllzhang.github.io/resium2)** (GitHub Pages)
+**[🌐 在线演示](https://wllzhang.github.io/resium-3d-map-demo)** (GitHub Pages)
 
 ## 📸 截图预览
 
@@ -49,8 +49,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/wllzhang/resium2.git
-cd resium2
+git clone https://github.com/wllzhang/resium-3d-map-demo.git
+cd resium-3d-map-demo
 ```
 
 ### 2. 安装依赖
@@ -98,7 +98,7 @@ npm run electron-dist
 ## 📁 项目结构
 
 ```
-resium2/
+resium-3d-map-demo/
 ├── electron/
 │   └── main.js              # Electron主进程文件
 ├── src/
@@ -179,7 +179,7 @@ const newCityPosition = Cartesian3.fromDegrees(longitude, latitude, 0);
 
 1. 推送代码到main分支
 2. GitHub Actions自动构建和部署
-3. 访问 `https://wllzhang.github.io/resium2`
+3. 访问 `https://wllzhang.github.io/resium-3d-map-demo`
 
 ## 📋 可用脚本
 
@@ -216,7 +216,7 @@ const newCityPosition = Cartesian3.fromDegrees(longitude, latitude, 0);
 
 如有问题或建议，请通过以下方式联系：
 
-- 提交 [Issue](https://github.com/wllzhang/resium2/issues)
+- 提交 [Issue](https://github.com/wllzhang/resium-3d-map-demo/issues)
 - 发送邮件至：wllzhang@example.com
 
 ---
